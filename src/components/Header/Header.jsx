@@ -12,18 +12,18 @@ const Header = ({ onPlaceChanged, onLoad }) => {
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
-          Travel Advisor
+          Przewodnik turysty
         </Typography>
         <Box display="flex">
           <Typography variant="h6" className={classes.title}>
-            Explore new places
+            Eksploruj nowe miejsca
           </Typography>
           <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
               </div>
-              <InputBase placeholder="Search…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+              <InputBase placeholder="Szukaj…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
             </div>
           </Autocomplete>
         </Box>

@@ -14,7 +14,7 @@ const List = ({ places, type, setType, rating, setRating, childClicked, isLoadin
 
   return (
     <div className={classes.container}>
-      <Typography variant="h4">Food i Dining around you</Typography>
+      <Typography variant="h4">Restautacje, hotele i atrakcje wokół Ciebie</Typography>
       {isLoading ? (
         <div className={classes.loading}>
           <CircularProgress size="5rem" />
@@ -22,20 +22,20 @@ const List = ({ places, type, setType, rating, setRating, childClicked, isLoadin
       ) : (
         <>
           <FormControl className={classes.formControl}>
-            <InputLabel id="type">Type</InputLabel>
+            <InputLabel id="type">Typ</InputLabel>
             <Select id="type" value={type} onChange={(e) => setType(e.target.value)}>
-              <MenuItem value="restaurants">Restaurants</MenuItem>
-              <MenuItem value="hotels">Hotels</MenuItem>
-              <MenuItem value="attractions">Attractions</MenuItem>
+              <MenuItem value="restaurants">Restauracje</MenuItem>
+              <MenuItem value="hotels">Hotele</MenuItem>
+              <MenuItem value="attractions">Atrakcje</MenuItem>
             </Select>
           </FormControl>
           <FormControl className={classes.formControl}>
-            <InputLabel id="rating">Rating</InputLabel>
+            <InputLabel id="rating">Ocena</InputLabel>
             <Select id="rating" value={rating} onChange={(e) => setRating(e.target.value)}>
-              <MenuItem value="">All</MenuItem>
-              <MenuItem value="3">Above 3.0</MenuItem>
-              <MenuItem value="4">Above 4.0</MenuItem>
-              <MenuItem value="4.5">Above 4.5</MenuItem>
+              <MenuItem value="">Wszystkie</MenuItem>
+              <MenuItem value="3">Powyżej 3.0</MenuItem>
+              <MenuItem value="4">Powyżej 4.0</MenuItem>
+              <MenuItem value="4.5">Powyżej 4.5</MenuItem>
             </Select>
           </FormControl>
           <Grid container spacing={3} className={classes.list}>
