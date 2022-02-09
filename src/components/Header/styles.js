@@ -9,8 +9,9 @@ export default makeStyles((theme) => ({
   },
   search: {
     position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    borderRadius: theme.shape.borderRadius, 
+    backgroundColor: alpha(theme.palette.common.white, 0.15), 
+    
     '&:hover': { backgroundColor: alpha(theme.palette.common.white, 0.25) },
     marginRight: theme.spacing(2),
     marginLeft: 0,
@@ -28,5 +29,6 @@ export default makeStyles((theme) => ({
   },
   toolbar: {
     display: 'flex', justifyContent: 'space-between',
+    background: 'linear-gradient(45deg, #000000 80%, #000000 90%)'
   },
 }));
